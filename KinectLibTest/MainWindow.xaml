@@ -1,0 +1,47 @@
+﻿<Window x:Class="KinectLibTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Canvas x:Name="iCanvas">
+        <TextBlock x:Name="txtGesture" Width="397" Height="43" TextAlignment="Center" Canvas.Left="83" Canvas.Top="12" Text="Kinect gestures" FontSize="28" Foreground="#FFF51C1C" />
+        <Image x:Name="leftHand" Source="images/leftHand.png" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="1" />
+        <Image x:Name="rightHand" Source="images/rightHand.png" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="1" />
+        <Grid Canvas.Left="0" Canvas.Top="61" Height="488" Name="grid1" Width="778">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="39*" />
+                <RowDefinition Height="39*" />
+                <RowDefinition Height="37*" />
+                <RowDefinition Height="33*" />
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="29*" />
+                <RowDefinition Height="29*" />
+                <RowDefinition Height="30*" />
+                <RowDefinition Height="33*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="29*" />
+                <RowDefinition Height="26*" />
+                <RowDefinition Height="26*" />
+                <RowDefinition Height="31*" />
+                <RowDefinition Height="27*" />
+            </Grid.RowDefinitions>
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="0,6,0,0" Name="textBlock1" Text="TextBlock" VerticalAlignment="Top" Width="739" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock2" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="1" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock3" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="2" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock4" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="3" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="1,2,0,0" Name="textBlock5" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="4" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="-3,2,0,0" Name="textBlock6" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="5" Grid.RowSpan="2" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="0,1,0,0" Name="textBlock7" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="6" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="-3,0,0,0" Name="textBlock8" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="7" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="0,6,0,0" Name="textBlock9" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="8" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock10" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="9" Grid.RowSpan="2" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock11" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="10" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="0,2,0,0" Name="textBlock12" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="11" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock13" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="12" Grid.RowSpan="2" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="-3,0,0,0" Name="textBlock14" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="13" Grid.RowSpan="2" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Margin="-3,3,0,0" Name="textBlock15" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="14" Foreground="#FFEB0F0F" />
+            <TextBlock Height="27" HorizontalAlignment="Left" Name="textBlock16" Text="TextBlock" VerticalAlignment="Top" Width="739" Grid.Row="15" Foreground="#FFEB0F0F" />
+        </Grid>
+        <CheckBox Canvas.Left="516" Canvas.Top="11" Content="Display VideoFrame" Height="21" Name="checkBox1" Width="231" IsChecked="True" Foreground="#FFEB1818" Click="checkBox1_Click" />
+    </Canvas>
+</Window>
